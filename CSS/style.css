@@ -1,0 +1,1032 @@
+/******************************************* FONTES *************************************/
+
+@font-face{
+    font-family: pacifico;
+    src: url(../Fonts/Pacifico/Pacifico-Regular.ttf);
+}
+
+@font-face{
+    font-family: roboto;
+    src: url(../Fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face{
+    font-family: lobster;
+    src: url(../Fonts/Lobster/LobsterTwo-Regular.ttf);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #DDD;
+}
+
+.back{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: black;
+}
+
+nav{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.logo{
+    width: 64px;
+    height: 64px;
+    float: left;
+}
+
+.nav-left{
+    width: 60%;
+    height: 100%;
+    float: left;
+}
+
+.active{
+    display: block; 
+}
+
+.menu{
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+    text-align: center;
+}
+
+.menu li{
+    width: 150px;
+    height: 40px;
+    box-sizing: border-box;
+    padding-top: 10px;
+    display: inline-block;
+    color: #F2F2F2;
+    cursor: pointer;
+}
+
+.menu li:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+    color: #101010;
+    transition: 0.5s;
+}
+
+.nav-right{
+    width: 30%;
+    height: 100%;
+    float: left;
+}
+
+.nav-right article{
+    width: 100%;
+}
+
+.nav-right article p{
+    width: 100px;
+    display: inline-block;
+    color: #F2F2F2;
+}
+
+.nav-right form{
+    width: 100%;
+    display: inline-block;
+}
+
+.nav-right form input{
+    width: 100px;
+}
+
+.submenu{
+    width: 100%;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+    display: none;
+    transition: 0.5s;
+}
+
+.sub-a{
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.menu li:hover > .submenu{
+    display: block;
+    transition: 1s;
+}
+
+
+.front{
+    width: 100%;
+    max-width: 1920px;
+    margin: auto;
+    margin-top: 90px;
+}
+
+.logo-mobile{
+    display: none;
+}
+
+.menu-mobile{
+    display: none;
+}
+
+.submenu-mobile{
+    display: none;
+}
+
+header{
+    width: 100%;
+    max-width: 1200px;
+    height: 530px;
+    margin: auto;
+    color: #DDD;
+    overflow: hidden;
+}
+
+header h1{
+    text-align: center;
+    font-size: 70px;
+    margin-top: 120px;
+}
+
+.mySlides{
+    display: none;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    overflow: hidden;
+}
+
+.border{
+    width: 90%;
+    border: 3px solid white;
+    margin: auto;
+}
+
+.content{
+    width: 100%;
+    max-width: 1200px;
+    overflow: auto;
+    margin: auto;
+    background-color: #C2C2C2;
+    color: #292929;
+}
+
+.redes-sociais{
+    width: 200px;
+    height: 500px;
+    margin-left: 1220px;
+    top: 0;
+    bottom: 0;
+    position: fixed;
+    margin-top: 140px;
+}
+
+.rs-itens{
+    width: 128px;
+    height: 128px;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.content-left{
+    width: 20%;
+    float: left;
+    height: 1000px;
+    background-color: #DDD;
+}
+
+.categoria{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    float: left;
+}
+
+.categoria-item{
+    width: 150px;
+    height: 50px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.subcategoria{
+    display: none;
+    float: left;
+    list-style-type: none;
+}
+
+.subcategoria li{
+    display: block;
+    width: 100px;
+}
+
+.subcategoria li a, a:link, a:visited{
+    color: black;
+}
+
+
+.content-right{
+    width: 80%;
+    float: left;
+}
+
+.catalogo{
+    width: 90%;
+    height: 100%;
+    margin-left: 20px;
+    margin-top: 100px;
+}
+
+
+.catalogo-item{
+    width: 30%;
+    height: 300px;
+    display: inline-block;
+}
+
+.imagem-produto{
+    width: 128px;
+    height: 128px;
+}
+
+footer{
+    clear: both;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    min-height: 350px;
+    height: auto;
+    background-color: black;
+    color: #F2F2F2;
+    box-sizing: border-box;
+    padding: 10px;
+    padding-left: 25px;
+}
+
+a{
+    color: #F2F2F2;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+a:visited{
+    color: #F2F2F2;
+}
+
+.footer-item{
+    width: 25%;
+    float: left;
+    height: 200px;
+    border-bottom: 1px solid #DDD;
+    margin-bottom: 50px;
+}
+
+.footer-redes{
+    width: 180px;
+    height: 32px;
+    margin: auto;
+}
+
+.footer-redes img{
+    float: left;
+    margin-right: 4px;
+}
+
+/****************************** BARBEARIA ************************************/
+
+.barbearia-servico{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    height: auto;
+    color: #FFB03F;
+    overflow: hidden;
+}
+
+.row{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 10px;
+    height: 360px;
+}
+
+.service-image{
+    width: 50%;
+    float: left;
+    height: 360px;
+}
+
+.service-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.service-desc{
+    width: 50%;
+    background-color: rgba(16, 16, 16, 0.6);
+    float: right;
+    height: 360px;
+}
+
+.service-desc h2{
+    font-size: 40px;
+    text-align: center;
+    font-family: pacifico;
+}
+
+.service-desc p{
+    font-size: 20px;
+    width: 80%;
+    margin: auto;
+    font-family: roboto;
+    text-align: justify;
+}
+
+.barbearia-atracao{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    height: 600px;
+    color: #FFB03F;
+    margin-top: 15px;
+}
+
+.barbearia-atracao-item{
+    width: 33%;
+    height: 580px;
+    float: left;
+    margin-left: 3px;
+}
+
+.barbearia-atracao-item{
+    text-align: center;
+}
+
+.barbearia-atracao-item img{
+    width: 256px;
+    height: 256px;
+}
+
+.barbearia-atracao-item img:hover{
+    transform: rotate(12deg);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+.barbearia-atracao-item article{
+    background-color: rgba(16, 16, 16, 0.6);
+    border-radius: 6%;
+    width: 90%;
+    margin: auto;
+    height: 300px;
+}
+
+.barbearia-atracao-item article p{
+    width: 80%;
+    text-align: justify;
+    margin: auto;
+    font-size: 25px;
+    box-sizing: border-box;
+    padding-top: 60px;
+}
+
+/****************************** CENTRO ESTÉTICO ************************************/
+.penelope-servicos{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    height: auto;
+    margin-top: 10px;
+}
+
+.penelope-servicos-item{
+    width: 23%;
+    height: 350px;
+    color: #E83131;
+    float: left;
+    margin-left: 17px;
+    vertical-align: top;
+}
+
+.penelope-servicos-image{
+    width: 80%;
+    height: 140px;
+    margin: auto;
+    text-align: center;
+}
+
+.penelope-servicos-image img{
+    width: 128px;
+    height: 128px;
+}
+
+.penelope-servicos-item article h1{
+    text-align: center;
+    font-size: 22px;
+}
+
+.penelope-servicos-item article p{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.penelope-atracoes{
+    clear: both;
+    width: 100%;
+    max-width: 1200px;
+    height: 320px;
+    margin: auto;
+    color: #E83131;
+}
+
+.atr-title{
+    width: 100%;
+    max-width: 1200px;
+    background-color: #FD877A;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 0;
+    border-bottom: 4px solid #FFD619;
+    color: #DDD;
+}
+
+.penelope-atracoes-item{
+    width: 32%;
+    float: left;
+    height: auto;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.atracoes-col1{
+    width: 40%;
+    float: left;
+}
+
+.atracoes-col2{
+    width: 56%;
+    float: right;
+}
+
+.atracoes-image{
+    width: 128px;
+    height: 128px;
+    background-color: black;
+    margin: auto;
+    border-radius: 100%;
+/*    background-image: url(../Imagens/pexels-photo-246732.jpeg);*/
+/*    background-size: cover;*/
+}
+
+.atracoes-image img{
+    width: 128px;
+    height: 128px;
+}
+
+.atracoes-col2 article h1{
+    font-size: 20px;
+}
+
+.atracoes-col2 article p{
+    font-size: 15px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+/***************************** SOBRE A EMPRESA ***********************************/
+
+.info{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    height: auto;
+}
+
+.info article h1{
+    font-size: 40px;
+    text-align: center;
+}
+
+.info article p{
+    width: 80%;
+    margin: auto;
+    text-align: center; 
+}
+
+.estabelecimentos{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    height: auto;
+}
+
+.estabelecimento-card{
+    width: 33%;
+    float: left;
+    height: auto;
+    background-color: rgba(255,255,255,0.8);
+    margin-left: 3px;
+    margin-left: 150px;
+}
+
+.card-title{
+    width: 100%;
+    background-color: orange;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.card-image{
+    width: 90%;
+    height: 200px;
+    margin: auto;
+/*    background-color: red;*/
+    margin-top: 5px;
+}
+
+.card-image img{
+    width: 360px;
+    height: 200px;
+}
+
+.estabelecimento-card article h1{
+    text-align: center;
+}
+
+.estabelecimento-card article p{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.fundadores{
+    clear: both;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    height: auto;
+    margin-bottom: 25px;
+}
+
+.fundadores-col-image{
+    width: 50%;
+    height: 380px;
+    box-sizing: border-box;
+    border-radius: 5%;
+    float: left;
+}
+
+.fundadores-col-image img{
+    width: 600px;
+    height: 380px;
+}
+
+.fundadores-col-desc{
+    width: 50%;
+    height: 400px;
+    float: left;
+}
+
+.fundadores-col-desc h1{
+    margin-left: 40px;
+}
+
+.fundadores-col-desc p{
+    width: 80%;
+    margin: auto;
+    text-align: justify;
+}
+
+.redes{
+    width: 100%;
+    max-width: 1200px;
+    height: 80px;
+    text-align: right;
+    margin-top: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+/************************************* PRODUTO DO MÊS ********************************************/
+
+.produto-mes{
+    width: 100%;
+    max-width: 1200px;
+    min-height: 800px;
+    height: auto;
+    margin: auto;
+}
+
+.produto-image{
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    margin-top: 20px;
+    background-image: url(../Imagens/produtos/destaque/brilho.jpg);
+    background-size: cover;
+}
+
+.produto-mes article h2{
+    font-size: 40px;
+    text-align: center;
+}
+
+.produto-mes article p{
+    width: 80%;
+    margin: auto;
+}
+
+.vantagens{
+    width: 33%;
+    float: left;
+    height: 200px;
+    margin-top: 80px;
+}
+
+.vantagens-image{
+    width: 64px;
+    height: 64px;
+    margin: auto;
+    text-align: center;
+}
+
+.vantagens article h3{
+    font-size: 16px;
+    text-align: center;
+}
+
+.vantagens article p{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+/**************************************** FALE CONOSCO *************************************/
+
+.fale-conosco{
+    width: 400px;
+    min-height: 300px;
+    height: auto;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.fale-conosco ul li{
+    box-sizing: border-box;
+    padding: 10px;
+    list-style-type: none;
+}
+
+.fale-conosco ul li label{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.lbl_fconosco{
+    display: block;
+    font-size: 22px;
+    margin: 15px;
+    margin-left: 0;
+}
+
+.input-normal{
+    border-radius: 5px;
+    background-color: lightgray;
+    border: none;
+    outline: none;
+    height: 25px;
+    text-indent: 15px;
+}
+
+.btn-submit{
+    width: 100px;
+    height: 50px;
+    font-weight: bold;
+}
+
+/********************************** PROMOÇÃO ******************************************/
+
+.promocao{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.produto-main{
+    width: 49%;
+    float: left;
+    height: auto;
+}
+
+.produto-main img{
+    width: 590px;
+    height: 580px;
+}
+
+.produto-main article p{
+    float: right;
+    color: green;
+}
+
+.produtos-others{
+    width: 24.5%;
+    height: 300px;
+    float: left;
+    margin-left: 5px;
+    margin-top: 50px;
+}
+
+.produtos-other-image{
+    width: 128px;
+    height: 128px;
+    margin: auto;
+    text-align: center;
+}
+
+.produtos-other-image img{
+    width: 128px;
+    height: 128px;
+}
+
+.produtos-others article p{
+    text-align: center;
+    color: green;
+}
+
+/********************************** LOJAS *******************************************/
+
+.lojas{
+    width: 100%;
+    max-width: 1200px;
+    min-height: 500px;
+    height: auto;
+}
+
+.lojas-left{
+    width: 50%;
+    float: left;
+}
+
+.lojas-right{
+    width: 50%;
+    height: auto;
+    float: left;
+}
+
+.lojas-right img{
+    width: 600px;
+    height: 500px;
+}
+
+.lojas-left p{
+    width: 100%;
+    margin: 0;
+    line-height: 25px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 9999;
+    display: none;
+}
+
+.modal{
+    width: 1180px;
+    height: auto;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+}
+
+.modal div{
+    width: 800px;
+    margin: auto;
+}
+
+#fechar{
+    width: 32px;
+    height: 32px;
+    float: left;
+    cursor: pointer;
+}
+
+.det_img{
+    width: 128px;
+    height: 128px;
+    margin: auto;
+}
+
+.det_img img{
+    width: 128px;
+    height: 128px;
+}
+
+@media screen and (min-device-width: 360px) and (max-device-width: 720px) {
+    .nav-left{
+        display: none;
+    }
+    
+    .nav-right{
+        display: none;
+    }
+    
+    .logo{
+        display: none;
+    }
+    
+    .logo-mobile{
+        display: block;
+        width: 64px;
+        height: 64px;
+        float: left;
+    }
+    
+    .logo-mobile:hover{
+        cursor: pointer;
+    }
+    
+    .menu-mobile{
+        float: left;
+        color: white;
+        margin-left: 20px;
+        cursor: pointer;
+        display: none;
+        list-style-type: none;
+    }
+    
+    
+    .catalogo-item{
+        width: 49%;
+        display: inline-block;
+        margin: auto;
+        margin-top: 10px;
+    }
+    
+    .redes-sociais{
+        display: none;
+    }
+    
+    header button{
+        display: none;
+    }
+    
+    .submenu-mobile{
+        display: none;
+        list-style-type: none;
+    }
+    
+    .submenu-mobile a{
+        display: block;
+        margin-left: 50px;
+    }
+    
+    /****************************************** BARBEARIA *********************************************/
+    
+    .barbearia-atracao-item{
+        width: 340px;
+        margin: auto;
+        margin-top: 10px;
+        margin: auto;
+        clear: both;
+    }
+    
+    /******************************************* PENELOPE **********************************************/
+
+    .penelope-servicos-item{
+        width: 50%;
+        margin: 0;
+    }
+    
+    .penelope-servicos-item h1{
+        margin: 0;
+    }
+    
+    .penelope-atracoes-item{
+        width: 100%;
+    }
+    
+    .atracoes-col1{
+        clear: both;
+        width: 100%;
+    }
+    
+    .atracoes-col2{
+        clear: both;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .atracoes-col2 article p{
+        width: 100%;
+    }
+    
+    .content{
+        overflow: hidden;
+    }
+
+    
+    /******************************************* PROJETO ***********************************************/
+    .estabelecimentos{
+        width: 100%;
+    }
+    
+    .estabelecimento-card{
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .card-image img{
+        width: 100%;
+    }
+    
+    .fundadores{
+        width: 100%;
+    }
+    
+    .fundadores-col-image{
+        width: 100%;
+        clear: both;
+    }
+    
+    .fundadores-col-image img{
+        width: 360px;
+    }
+    
+    .fundadores-col-desc{
+        width: 100%;
+        clear: both;
+        height: auto;
+    }
+    
+    .fundadores-col-image img{
+        width: 100%;
+    }
+    
+    /*********************************************** PROMOÇÃO ******************************************/
+    .promocao{
+        max-width: 150px;
+        margin: auto;
+    }
+    
+    .produto-main{
+        clear: both;
+    }
+    
+    .produto-main img{
+        width: 128px;
+        height: 128px;
+    }
+    
+    .produtos-others{
+        clear: both;
+    }
+    
+    /********************************************* LOJAS **********************************************/    
+    .lojas-left{
+        width: 100%;
+        clear: both;
+    }
+    
+    .lojas-left article{
+        width: 100;
+        text-align: center;
+    }
+    
+    .lojas-right{
+        width: 100%;
+        clear: both;
+    }
+    
+    .lojas-right img{
+        width: 100%;
+        height: auto;
+    }
+    
+}
